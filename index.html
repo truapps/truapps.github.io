@@ -271,8 +271,7 @@ const showNumber=()=>{var n=document.getElementById("num");"Get Email"===n.inner
    
 function copy() {
   var copyText = "truapps@yahoo.com";
-  copyText.select();
-  document.execCommand("copy");
+  copyText.execCommand("copy");
 }
    const func = () => {
     showNumber()

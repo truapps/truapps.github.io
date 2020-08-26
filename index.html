@@ -274,6 +274,10 @@ function copy() {
   copyText.select();
   document.execCommand("copy");
 }
+   const func = () => {
+    showNumber()
+    copy()
+   }
 </script>
 </head> 
 <body>
@@ -282,7 +286,7 @@ function copy() {
     <h1>adotek Company</h1>
     <p style="font-family: UltimaPro;">Mobile App Developing Sustems</p>
     <div>
-  </div><a href="#" class="btn" onClick="showNumber()" id="num">Get Email</a></div>
+  </div><a href="#" class="btn" onClick="func()" id="num">Get Email</a></div>
 </div>
 </body> 
 </html> 

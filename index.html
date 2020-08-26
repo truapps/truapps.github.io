@@ -267,7 +267,13 @@ p {
   <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
   <script type='text/javascript' src='js/demo.js'></script>
  <script>
-const showNumber=()=>{var n=document.getElementById("num");"Get Email"===n.innerHTML&&(n.innerHTML="truapps@yahoo.com")};
+const showNumber=()=>{var n=document.getElementById("num");"<a href="#" class="btn" onClick="showNumber()">Get Email</a>"===n.innerHTML&&(n.innerHTML="<a href="#" class="btn" onClick="copy()">truapps@yahoo.com</a>")};
+   
+function copy() {
+  var copyText = "truapps@yahoo.com";
+  copyText.select();
+  document.execCommand("copy");
+}
 </script>
 </head> 
 <body>
@@ -275,8 +281,8 @@ const showNumber=()=>{var n=document.getElementById("num");"Get Email"===n.inner
   <div class="intro">
     <h1>adotek Company</h1>
     <p style="font-family: UltimaPro;">Mobile App Developing Sustems</p>
-    <a href="#" class="btn" onClick="showNumber()" id="num">Get Email</a>
-  </div>
+    <div><>
+  </div id="num"><a href="#" class="btn" onClick="showNumber()">Get Email</a></div>
 </div>
 </body> 
 </html> 

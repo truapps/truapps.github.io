@@ -261,11 +261,67 @@ p {
     font-family: UltimaPro;
     src: url(UltimaPro-Bold.ttf);
 }
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #60D7A9;
+}
+
+.dots .dot {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 0 10px;
+  border-radius: 50%;
+  background: #FFF;
+  -webkit-animation: dot-dot-dot 1.4s linear infinite;
+  animation: dot-dot-dot 1.4s linear infinite;
+}
+
+.dots .dot:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.dots .dot:nth-child(3) {
+  animation-delay: .4s;
+}
+
+@keyframes dot-dot-dot {
+  0%, 60%, 100% {
+    -webkit-transform: initial;
+      -ms-transform: initial;
+        transform: initial;
+  }
+  30% {
+    -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+        transform: translateY(-25px);
+  }
+}
  </style>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
   <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
   <script type='text/javascript' src='js/demo.js'></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous"></script>
+ <script src="dist/js/jquery.preloadinator.min.js"></script>  
  <script>
 const showNumber=()=>{var n=document.getElementById("num");"Get Email"===n.innerHTML&&(n.innerHTML="truapps@yahoo.com")};
    
@@ -277,9 +333,33 @@ function copy() {
     showNumber()
     copy()
    }
+   
+   $('.js-preloader').preloadinator();
+   $('.js-preloader').preloadinator({
+     scroll: false
+   }); 
+   $('.js-preloader').preloadinator({
+     minTime: 2000
+   });
+   $('.js-preloader').preloadinator({
+     animation: 'fadeOut',
+     animationDuration: 400
+   });
+   $('.js-preloader').preloadinator({
+     afterDisable<a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>: function() {},
+     afterEnableScroll: function() {},
+     afterRemovePreloader: function() {}
+   });
 </script>
 </head> 
 <body>
+  <div class="preloader js-preloader flex-center">
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
 <div id="particles">
   <div class="intro">
     <h1>adotek Company</h1>

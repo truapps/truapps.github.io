@@ -1,1 +1,0 @@
-# adotek.github.io

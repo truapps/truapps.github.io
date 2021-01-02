@@ -1,484 +1,95 @@
 <!doctype html>
-<html lang="en" class="no-js">
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Business card: Vladyslav</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    a,
-    abbr,
-    acronym,
-    address,
-    applet,
-    article,
-    aside,
-    audio,
-    b,
-    big,
-    blockquote,
-    body,
-    canvas,
-    caption,
-    center,
-    cite,
-    code,
-    dd,
-    del,
-    details,
-    dfn,
-    div,
-    dl,
-    dt,
-    em,
-    embed,
-    fieldset,
-    figcaption,
-    figure,
-    footer,
-    form,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    header,
-    hgroup,
-    html,
-    i,
-    iframe,
-    img,
-    ins,
-    kbd,
-    label,
-    legend,
-    li,
-    mark,
-    menu,
-    nav,
-    object,
-    ol,
-    output,
-    p,
-    pre,
-    q,
-    ruby,
-    s,
-    samp,
-    section,
-    small,
-    span,
-    strike,
-    strong,
-    sub,
-    summary,
-    sup,
-    table,
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    time,
-    tr,
-    tt,
-    u,
-    ul,
-    var,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-
-    body {
-      line-height: 1;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-    }
-
-    blockquote,
-    q {
-      quotes: none;
-    }
-
-    blockquote:after,
-    blockquote:before,
-    q:after,
-    q:before {
-      content: "";
-      content: none;
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-    }
-
-    body,
-    html {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      background-color: #16a085;
-      /*     background: linear-gradient(-45deg, #16a085, #458a7c, #42bd88);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite; */
-      font-family: Montserrat, sans-serif;
-      color: #fff;
-      line-height: 1.3;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    @keyframes gradient {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-
-    #particles {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-
-    .intro {
-      position: absolute;
-      left: 0;
-      top: 50%;
-      padding: 0 20px;
-      width: 100%;
-      text-align: center;
-    }
-
-    h1 {
-      text-transform: uppercase;
-      font-size: 85px;
-      font-weight: 700;
-      letter-spacing: 0.015em;
-    }
-
-    h1::after {
-      content: "";
-      width: 80px;
-      display: block;
-      background: #fff;
-      height: 10px;
-      margin: 30px auto;
-      line-height: 1.1;
-    }
-
-    p {
-      margin: 0 0 30px 0;
-      font-size: 24px;
-    }
-
-    .btn {
-      border-radius: 70px;
-      display: inline-block;
-      padding: 15px 30px;
-      border: 2px solid #fff;
-      text-transform: uppercase;
-      letter-spacing: 0.015em;
-      font-size: 18px;
-      font-family: UltimaPro;
-      font-weight: 700;
-      line-height: 1;
-      color: #fff;
-      text-decoration: none;
-      -webkit-transition: all 0.4s;
-      -moz-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s;
-    }
-
-    .btn:hover {
-      color: #e6e6e6;
-      border-color: #e6e6e6;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      h1 {
-        font-size: 70px;
-      }
-      html {
-        font-size: 70px;
-      }
-      .social-links {
-        display: none;
-      }
-    }
-
-    @media only screen and (max-width: 800px) {
-      h1 {
-        font-size: 48px;
-      }
-
-      h1::after {
-        height: 8px;
-      }
-      .social-links {
-        display: none;
-      }
-    }
-
-    @media only screen and (max-width: 568px) {
-      .intro {
-        padding: 0 10px;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
-
-      h1::after {
-        height: 6px;
-      }
-
-      p {
-        font-size: 18px;
-      }
-
-      .btn {
-        font-size: 16px;
-      }
-      .social-links {
-        display: none;
-      }
-    }
-
-    @media only screen and (max-width: 320px) {
-      h1 {
-        font-size: 28px;
-      }
-
-      h1::after {
-        height: 4px;
-      }
-    }
-
-    @font-face {
-      font-family: Light;
-      src: url(light.otf);
-    }
-
-    @font-face {
-      font-family: UltimaPro;
-      src: url(UltimaPro-Bold.ttf);
-    }
-
-    #preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      z-index: 999;
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-      background: #16a085;
-      /*       background: #16a085 url('/preloader.gif') no-repeat center center; */
-    }
-
-    .visible {
-      visibility: visible;
-      opacity: 1;
-      /*   transition: opacity 2s linear; */
-    }
-
-    .hidden {
-      visibility: hidden;
-      opacity: 0;
-      /*   transition: visibility 0s 2s, opacity 2s linear; */
-    }
-
-    .loader,
-    .loader:before,
-    .loader:after {
-      background: #ffffff;
-      -webkit-animation: load1 1s infinite ease-in-out;
-      animation: load1 1s infinite ease-in-out;
-      width: 1em;
-      height: 4em;
-    }
-
-    .loader {
-      color: #ffffff;
-      text-indent: -9999em;
-      margin: 88px auto;
-      position: relative;
-      font-size: 11px;
-      -webkit-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-      transform: translateZ(0);
-      -webkit-animation-delay: -0.16s;
-      animation-delay: -0.16s;
-    }
-
-    .loader:before,
-    .loader:after {
-      position: absolute;
-      top: 0;
-      content: '';
-    }
-
-    .loader:before {
-      left: -1.5em;
-      -webkit-animation-delay: -0.32s;
-      animation-delay: -0.32s;
-    }
-
-    .loader:after {
-      left: 1.5em;
-    }
-
-    @-webkit-keyframes load1 {
-
-      0%,
-      80%,
-      100% {
-        box-shadow: 0 0;
-        height: 4em;
-      }
-
-      40% {
-        box-shadow: 0 -2em;
-        height: 5em;
-      }
-    }
-
-    @keyframes load1 {
-
-      0%,
-      80%,
-      100% {
-        box-shadow: 0 0;
-        height: 4em;
-      }
-
-      40% {
-        box-shadow: 0 -2em;
-        height: 5em;
-      }
-    }
-
-    /* Social links */
-    .hidden-link {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .social-links {
-      position: fixed;
-      bottom: 15.5px;
-      right: 24.5px;
-    }
-    .social-links__item {
-      width: 1.5rem;
-      height: 1.5rem;
-      margin-left: 10px;
-    }     
-    .social-links__item:hover{
-      opacity: 0.7;
-    }  
-
-    /* /Social links */
-  </style>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
-  <script type='text/javascript' src='js/jquery.particleground.min.js'></script>
-  <script type='text/javascript' src='js/demo.js'></script>
-
-
-
-  <script>
-    const showNumber = () => { var n = document.getElementById("num"); "Get Email" === n.innerHTML && (n.innerHTML = "truapps@yahoo.com") };
-
-    function copy() {
-      var copyText = "truapps@yahoo.com";
-      copyText.execCommand("copy");
-    }
-    const func = () => {
-      showNumber()
-      copy()
-    }
-  </script>
-</head>
-
-<body>
-  <div id="preloader" class="visible">
-    <div class="loader">Loading...</div>
-  </div>
-  <div id="particles">
-    <div class="intro">
-      <h1>adotek Company</h1>
-      <p style="font-family: UltimaPro;">Mobile App Developing Sustems</p>
-      <div>
-      </div><a href="#" class="btn" onClick="func()" id="num">Get Email</a>
-
-      <div class="social-links">
-        <a href="https://github.com/adotek" class="hidden-link"><img class="social-links__item" src="/github.svg"></a>
-        <a href="https://vk.com/truapps" class="hidden-link"><img class="social-links__item" src="/vk.svg"></a>
-        <a href="https://t.me/aviras" class="hidden-link"><img class="social-links__item" src="/telegram.svg"></a>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="src/16.svg">
+    <title>Neoppat Studio - Главная страница</title>
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/album.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Контакты</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://instagram.com/neoppat" class="text-white"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+                <li><a href="https://github.com/neoppat" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                <li><a href="https://vk.com/neoppat" class="text-white"><i class="fa fa-vk" aria-hidden="true"></i> ВКонтакте</a></li>
+                <li><a href="https://twitch.tv/neoppat" class="text-white"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Neoppat Design Studio</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <main role="main">
 
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Мои работы</h1>
+        </div>
+      </section>
 
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
 
-  <script>
-    function loadData() {
-      return new Promise((resolve, reject) => {
-        setTimeout(resolve, 2000);
-      })
-    }
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="src/img/1.png" target="_blank">
+                   <img class="card-img-top" src="src/img/1.png" alt="Card image cap">
+                  </a>
+                <div class="card-body">
+                  <p class="card-text">Hosting Template</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <a href="src/img/1.png" target="_blank">
+                   <img class="card-img-top" src="src/img/2.png" alt="Card image cap">
+                  </a>
+                <div class="card-body">
+                  <p class="card-text">PlayVI design</p>
+                </div>
+              </div>
+            </div>
 
-    loadData()
-      .then(() => {
-        let preloaderEl = document.getElementById('preloader');
-        preloaderEl.classList.add('hidden');
-        preloaderEl.classList.remove('visible');
-      });
-  </script>
-</body>
-
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+        </p>
+        <p>Neoppat Studio &copy; 2020-<script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script></p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+  </body>
 </html>

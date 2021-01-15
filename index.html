@@ -1,87 +1,123 @@
-<!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="src/img/logo.svg">
-    <title>TruApps - Главная страница</title>
-    <link href="src/css/bootstrap.min.css" rel="stylesheet">
-    <link href="src/css/album.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TruApps - it's me</title>
+    <meta name="description" content="MaxUNof.me - it's me" />
+    <meta name="author" content="MaxUNof" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=228" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      html {
+        pointer-events: none;
+      }
+      .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: black;
+      }
+      #content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./background.gif") no-repeat center black;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+      }
+      #form {
+        width: 20rem;
+        height: 20rem;
+        margin-right: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px 10px 33px 33px;
+        filter: drop-shadow(0px 11.5px 7.5px rgba(0, 0, 0, 0.3));
+      }
+      #profile {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: -10%;
+      }
+      #name {
+        font-size: 36px;
+        color: white;
+      }
+      #subtext {
+        font-size: 24px;
+        color: lightgrey;
+        margin-top: 8px;
+        padding: 8px;
+      }
+
+      #bottom {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+      }
+      #bottom > a {
+        margin-left: 30px;
+      }
+      #bottom > :first-child {
+        margin-left: 0;
+      }
+      .button {
+        pointer-events: auto;
+        color: white;
+        width: 10px;
+        height: 10px;
+      }
+      .round {
+        border-radius: 50%;
+      }
+      .link {
+        text-decoration: none;
+        color: white;
+      }
+      .link:hover {
+        color: lavender;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">О нас</h4>
-              <p class="text-muted">TruApps специализируется на разработке веб-дизайна для небольших проектов с невысокими требованиями к функциональности.</p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Контакты</h4>
-              <ul class="list-unstyled">
-                <li><a href="https://instagram.com/neoppat" class="text-white"> <i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                <li><a href="https://github.com/truapps" class="text-white"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                <li><a href="https://vk.com/truapps" class="text-white"><i class="fa fa-vk" aria-hidden="true"></i> ВКонтакте</a></li>
-                <li><a href="https://twitch.tv/neoppat" class="text-white"><i class="fa fa-twitch" aria-hidden="true"></i> Twitch</a></li>
-                <li><a href="mailto:truappswork@gmail.com" class="text-white"><i class="fa fa-envelope" aria-hidden="true"></i> truappswork@gmail.com</a></li>
-                <li><a href="mailto:truapps@yahoo.com" class="text-white"><i class="fa fa-envelope" aria-hidden="true"></i> truapps@yahoo.com</a></li>
-              </ul>
-            </div>
-          </div>
+    <div class="loader" style="display: none"></div>
+    <div id="content">
+      <div id="form">
+        <div id="profile">
+          <img src="./ava.jpg" width="50%" height="50%" class="round" />
+          <div id="name">s1mple</div>
+          <span id="subtext">tru coder</span>
+          <span id="bottom">
+            <a class="link" href="https://t.me/aviras/">
+              <i class="round button fab fa-telegram-plane"></i>
+            </a>
+            <a class="link" href="https://vk.com/truapps/">
+              <i class="round button fab fa-vk"></i>
+            </a>
+          </span>
         </div>
       </div>
-      <div class="navbar navbar-dark bg-dark box-shadow">
-        <div class="container d-flex justify-content-between">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-            <strong>TruApps Studio</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <main role="main">
-
-      <section class="jumbotron text-center">
-        <div class="container">
-          <h1 class="jumbotron-heading">Мои работы</h1>
-        </div>
-      </section>
-
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <div class="row">
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <a href="src/img/1.png" target="_blank">
-                   <img class="card-img-top" src="src/img/1.png" alt="Card image cap">
-                  </a>
-                <div class="card-body">
-                  <p class="card-text">Hosting Template</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="text-muted">
-      <div class="container">
-        <p class="float-right">
-        </p>
-        <p>Neoppat Studio &copy; 2020-<script type="text/javascript">dt = new Date();document.write(dt.getFullYear());</script></p>
-      </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="src/js/bootstrap.min.js"></script>
+    </div>
   </body>
 </html>

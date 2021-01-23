@@ -1,0 +1,24 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #444f5a;
+        stroke-linecap: round;
+      }
+
+      .cls-2 {
+        stroke: #ff2045;
+      }
+    </style>
+  </defs>
+  <title>_</title>
+  <g>
+    <path class="cls-1" d="M23.42313,11.72624A9.33395,9.33395,0,0,0,5.41266,14.62051a5.31967,5.31967,0,0,0-.02614,10.60608v.04669h3.214"/>
+    <path class="cls-2" d="M31.99933,22.20066V21.06609a9.33348,9.33348,0,0,0-18.653-.51662,5.31967,5.31967,0,0,0-.02614,10.60608v.04669H31.99933a4.50079,4.50079,0,0,0,0-9.00158Z"/>
+  </g>
+</svg>

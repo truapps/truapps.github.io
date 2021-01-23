@@ -1,121 +1,643 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TruApps - it's me</title>
-    <meta name="description" content="MaxUNof.me - it's me" />
-    <meta name="author" content="MaxUNof" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/styles.css?v=228" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enoot - Хостинг №1 в СНГ</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-      crossorigin="anonymous"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-      html {
-        pointer-events: none;
-      }
-      .loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: black;
-      }
-      #content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background: url("./background.gif") no-repeat center black;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-      }
-      #form {
-        width: 20rem;
-        height: 20rem;
-        margin-right: auto;
-        margin-top: auto;
-        margin-left: auto;
-        margin-bottom: auto;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 10px 10px 33px 33px;
-        filter: drop-shadow(0px 11.5px 7.5px rgba(0, 0, 0, 0.3));
-      }
-      #profile {
-        text-align: center;
-        font-family: "Roboto", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        margin-top: -10%;
-      }
-      #name {
-        font-size: 36px;
-        color: white;
-      }
-      #subtext {
-        font-size: 24px;
-        color: lightgrey;
-        margin-top: 8px;
-        padding: 8px;
-      }
-
-      #bottom {
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        width: 100%;
-        margin-bottom: 36px;
-        display: flex;
-        justify-content: center;
-      }
-      #bottom > a {
-        margin-left: 30px;
-      }
-      #bottom > :first-child {
-        margin-left: 0;
-      }
-      .button {
-        pointer-events: auto;
-        color: white;
-        width: 10px;
-        height: 10px;
-      }
-      .round {
-        border-radius: 50%;
-      }
-      .link {
-        text-decoration: none;
-        color: white;
-      }
-      .link:hover {
-        color: lavender;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
   </head>
   <body>
-    <div class="loader" style="display: none"></div>
-    <div id="content">
-      <div id="form">
-        <div id="profile">
-          <img src="./ava.jpg" width="50%" height="50%" class="round" />
-          <div id="name">T3G1NG</div>
-          <span id="subtext">true coder</span>
-          <span id="bottom">
-            <a class="link" href="https://t.me/aviras/">
-              <i class="round button fab fa-telegram-plane"></i>
-            </a>
-            <a class="link" href="https://vk.com/truapps/">
-              <i class="round button fab fa-vk"></i>
-            </a>
-          </span>
+    <div class="wrapper">
+      <div class="content">
+        <section id="main-block">
+          <nav>
+            <img src="img/logo.svg" alt="logotype" class="logo" />
+            <span class="headline">Enoot</span>
+            <ul class="menu">
+              <li>
+                <a href="/home">Главная</a>
+              </li>
+              <li>
+                <a href="#">Преимущества</a>
+              </li>
+              <li>
+                <a href="#">Цены</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <a href="/contacts">Контакты</a>
+              </li>
+            </ul>
+            <div class="right_buttons">
+              <div class="lk">
+                <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                <a href="/feedback">Поддержка</a>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <a href="/feedback">Личный кабинет</a>
+              </div>
+              <div class="translate">
+                <ul>
+                  <li>
+                    <img src="./img/localization/language.svg" />
+                    <ul class="submenu">
+                      <li>
+                        <img src="./img/localization/RU.png" />
+                      </li>
+                      <li>
+                        <img src="./img/localization/UA.png" />
+                      </li>
+                      <li>
+                        <img src="./img/localization/EN.png" />
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-bars">
+              <div class="wrapper__mobile-navbar">
+                <input id="hamburger" class="hamburger" type="checkbox" />
+                <label class="hamburger" for="hamburger">
+                  <i></i>
+                </label>
+                <section class="drawer-list sub-h">
+                  <ul>
+                    <li>
+                      <a href="/home">Главная</a>
+                    </li>
+                    <li>
+                      <a href="#">Преимущества</a>
+                    </li>
+                    <li>
+                      <a href="#">Цены</a>
+                    </li>
+                    <li>
+                      <a href="#">О нас</a>
+                    </li>
+                    <li>
+                      <a href="/contacts">Контакты</a>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </nav>
+          <div class="main">
+            <div class="main_text">
+              <h2>
+                Профессиональное решение<br />
+                Только один клик
+              </h2>
+              <div class="main_preferences">
+                <ul class="preferences">
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    Профессиональная помощь
+                  </li>
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    Uptime серверов 100%
+                  </li>
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    Неограниченное веб-пространство
+                  </li>
+                </ul>
+                <ul class="preferences">
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    BrainyCP & ISP Systems
+                  </li>
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    Более 125 бесплатных приложений
+                  </li>
+                  <li>
+                    <span class="check"
+                      ><i class="fa fa-check" aria-hidden="true"></i
+                    ></span>
+                    30-дневная гарантия возврата денег
+                  </li>
+                </ul>
+              </div>
+              <div class="start_buttons">
+                <a class="button" href="#"
+                  >Заказать <i class="fa fa-arrow-right" aria-hidden="true"></i
+                ></a>
+                <a class="read-more" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="img/server.svg" alt="server" class="slide_img" />
+            </div>
+          </div>
+        </section>
+
+        <div id="domains">
+          <div id="domains">
+            <div class="main-domain">
+              <div class="search-domain">
+                <div class="input-domain">
+                  <input placeholder="Введите доменное имя..." />
+                  <select>
+                    <option>.com</option>
+                    <option>.ru</option>
+                    <option>.ua</option>
+                    <option>.net</option>
+                  </select>
+                </div>
+                <div>
+                  <button class="button w-100" href="#">
+                    Найти домен
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          <div class="guarantees">
+            <span class="title-guarantees"><h3>МЫ ГАРАНТИРУЕМ</h3></span>
+            <span class="title-guarantees-mobile"><h3>МЫ ГАРАНТИРУЕМ</h3></span>
+            <span class="fire"><img src="img/fire.svg" alt="fire" /></span>
+            <div class="guarantees-list">
+              <div>
+                <div class="guarantees-card">
+                  <span class="guarantees-icon">
+                    <img src="img/money.svg" alt="users" />
+                  </span>
+                  <span class="guarantees-text">
+                    <p class="sub-h">Возврат средств</p>
+                    <!-- At anytime during the first 30 days after you get an hosting from rackblaze you can receive a full refund if you're unhappy with our service. We will don't ask you any questions -->
+                    <p class="sub-t">
+                      В любое время в течение первых 30 дней после получения
+                      хостинга от rakblaze вы можете получить полный возврат
+                      средств, если вы недовольны нашим сервисом. Мы не будем
+                      задавать вам никаких вопросов.
+                    </p>
+                  </span>
+                </div>
+
+                <div class="guarantees-card">
+                  <span class="guarantees-icon">
+                    <img src="img/backups.svg" alt="users" />
+                  </span>
+                  <span class="guarantees-text">
+                    <p class="sub-h">Безопастность & Бэкапы</p>
+                    <!-- with linux kernels clients are dully isolated from each other. Backups are creating every hour. They are stored off-datacenter and even off-country to mitigate any kind of circumstances. -->
+                    <p class="sub-t">
+                      С ядрами linux клиенты тупо изолированы друг от друга.
+                      Резервные копии создаются каждый час. Они хранятся за
+                      пределами центра обработки данных или даже за пределами
+                      страны, чтобы смягчить любые обстоятельства.
+                    </p>
+                  </span>
+                </div>
+
+                <div class="guarantees-card">
+                  <span class="guarantees-icon">
+                    <img src="img/users.svg" alt="users" />
+                  </span>
+                  <span class="guarantees-text">
+                    <p class="sub-h">Эксперты в вашем распоряжении</p>
+                    <!-- 24/7/365. Our doors are never closed. First time hearing about domains, hosting packages and other confisong terms? Our team consists of web development professionals that will help you setup, launch or even fix your web page. -->
+                    <p class="sub-t">
+                      24/7/365. Наши двери никогда не закрываются. Впервые
+                      слышите о доменах, хостинг-пакетах и ​​других
+                      конфиденциальных условиях? Наша команда состоит из
+                      профессионалов веб-разработки, которые помогут вам
+                      настроить, запустить или даже исправить вашу веб-страницу.
+                    </p>
+                  </span>
+                </div>
+                <div class="guarantees-card">
+                  <span class="guarantees-icon">
+                    <img src="img/speed.svg" alt="users" />
+                  </span>
+                  <span class="guarantees-text">
+                    <p class="sub-h">Невероятно быстрая скорость загрузки</p>
+                    <!-- Studies show that your conversion rate dips dramaticaly when load time is over one second. Our servers are powered by enterprise grade SSD disks, Nginx webserver and PHP  fast cgi, that in combination offers best performance -->
+                    <p class="sub-t">
+                      Исследования показывают, что ваш коэффициент конверсии
+                      резко падает, когда время загрузки превышает одну секунду.
+                      Наши серверы работают на SSD-дисках корпоративного уровня,
+                      веб-сервере Nginx и PHP fast cgi, что в сочетании
+                      обеспечивает лучшую производительность.
+                    </p>
+                  </span>
+                </div>
+              </div>
+              <div class="shield">
+                <img src="img/shield_slide.svg" alt="shield" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="features">
+          <span class="title-guarantees"><h3>ПРЕИМУЩЕСТВА</h3></span>
+          <span class="title-guarantees-mobile"><h3>ПРЕИМУЩЕСТВА</h3></span>
+          <span class="fire"><img src="img/fire.svg" alt="fire" /></span>
+          <div class="features-content">
+            <div class="col">
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/shield.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">High Availability</p>
+                  <p class="sub-t">
+                    We do not know anything other than 99.99% uptime.
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/circle.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Профессиональная помощь</p>
+                  <p class="sub-t">
+                    Помогите вашему сайту работать вместе с сертифицированным
+                    специалистом Rackblaze. Ваш бизнес будет нашим главным
+                    приоритетом, и мы будем относиться к нему как к своему
+                    собственному.
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/saturation.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Без насыщенности</p>
+                  <p class="sub-t">
+                    Мы строго следим за нашими серверами по использованию
+                    ресурсов и никогда не перегружаем их клиентами.
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/dev.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Разработчикам Разработчиками</p>
+                  <p class="sub-t">
+                    Здесь профессиональные веб-разработчики. У нас было
+                    достаточно проблем с плохими хостинг-провайдерами,
+                    предоставляющими медленные серверы, неоптимизированные
+                    веб-серверы, медленные диски, выполняющие ужасный
+                    ввод-вывод, или дни ожидания заявок в службу поддержки. Вот
+                    где были созданы Rackblaze.
+                  </p>
+                </span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/layer.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Изоляция ресурсов Cloudlinux</p>
+                  <p class="sub-t">
+                    Безопасность - одна из главных характеристик.
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/ssd.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Nginx & SSD</p>
+                  <p class="sub-t">
+                    Наши серверы работают на SSD-дисках корпоративного уровня,
+                    веб-сервере Nginx и PHP fast cgi, которые в сочетании
+                    обеспечивают лучшую производительность.
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/migration.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Миграционная служба</p>
+                  <p class="sub-t">
+                    В течении 30 дней мы вернем вам деньги за услугу который вы
+                    не хотите больше пользоваться из за того что мы качественный
+                    хостинг
+                  </p>
+                </span>
+              </div>
+              <div class="features-card">
+                <span class="features-img">
+                  <img src="img/cloud.svg" alt="users" />
+                </span>
+                <span class="features-text">
+                  <p class="sub-h">Никогда больше не теряйте свою работу</p>
+                  <p class="sub-t">
+                    Резервные копии. Каждый час. Да. Используя технологию
+                    инкрементной передачи данных, мы можем предоставить нашим
+                    клиентам безумно невероятные решения для резервного
+                    копирования. Общий веб-хостинг, выделенный сервер или
+                    виртуальный частный сервер - все они могут быть защищены
+                    облаком резервного копирования в стойку.
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="steps">
+          <span class="title-guarantees"
+            ><h3>ТРИ ШАГА И У ВАС ЕСТЬ ХОСТИНГ</h3></span
+          >
+          
+          <span class="title-guarantees-mobile"><h3>Тарифы</h3></span>
+          <div class="main-step">
+            <div class="step-card">
+              <div><img src="img/auth.svg" alt="users" /></div>
+              <div class="step-text">
+                <p class="sub-h">1. Авторизуйся</p>
+                <span class="step-more">
+                  Для получения хостинга от rackblaze вам потребуется
+                  собственная учетная запись. Вы можете
+                  <a href="#">создать новый</a> или <a href="#">войти</a>
+                  в систему.
+                </span>
+              </div>
+            </div>
+            <div class="step-line">
+              <div>
+                <img src="./img/line-step.svg" />
+              </div>
+            </div>
+            <div class="step-card">
+              <div><img src="img/plan.svg" alt="users" /></div>
+              <div class="step-text">
+                <p class="sub-h">2. Выберите тарифный план</p>
+                <span class="step-more">
+                  Выберите лучший тарифный план для своего сайта. У нас есть 3
+                  тарифных плана, выбирайте подходящий.
+                </span>
+              </div>
+            </div>
+            <div class="step-line">
+              <div>
+                <img src="./img/line-step.svg" />
+              </div>
+            </div>
+            <div class="step-card">
+              <div><img src="img/payment.svg" alt="users" /></div>
+              <div class="step-text">
+                <p class="sub-h">3. Совершите платеж</p>
+                <span class="step-more">
+                  Когда вы вошли в систему, выбрали подходящий план хостинга,
+                  все, что вам нужно сделать, это произвести оплату.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="main-tarif">
+            <div class="tarif-card">
+              <div class="tarif-headline">
+                <span class="bold-t">Alpha</span>
+              </div>
+              <div class="img-tarif">
+                <div>
+                  <img src="img/alpha_plan.svg" alt="serv_tarif" />
+                </div>
+              </div>
+              <div class="params-list">
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">5</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">SSD</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">2</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">ОЗУ</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">150</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">сайтов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pack">
+                <ul>
+                  <li>ISP manager</li>
+                  <li>Bill manager</li>
+                  <li>Vecta CP</li>
+                  <li>100 GB SSD</li>
+                  <li>Intel Core i7</li>
+                </ul>
+              </div>
+              <div class="order-button">
+                <div class="price-block">
+                  <div class="price-img">
+                    <div>
+                      <img src="img/cart.svg" alt="tarifs" />
+                    </div>
+                  </div>
+                  <div class="price">
+                    <span class="price-text"
+                      ><i class="fa fa-rub" aria-hidden="true"></i> 200 /
+                      месяц</span
+                    >
+                    <span class="sale-text">-15% (из за НГ)</span>
+                  </div>
+                </div>
+                <div>
+                  <button href="#" class="order-text">ЗАКАЗАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="tarif-card">
+              <div class="tarif-headline">
+                <span class="bold-t">Beta</span>
+              </div>
+              <div class="img-tarif">
+                <div>
+                  <img src="img/beta_plan.svg" alt="serv_tarif" />
+                </div>
+              </div>
+              <div class="params-list">
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">5</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">SSD</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">2</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">ОЗУ</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">150</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">сайтов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pack">
+                <ul>
+                  <li>ISP manager</li>
+                  <li>Bill manager</li>
+                  <li>Vecta CP</li>
+                  <li>100 GB SSD</li>
+                  <li>Intel Core i7</li>
+                </ul>
+              </div>
+              <div class="order-button">
+                <div class="price-block">
+                  <div class="price-img">
+                    <div>
+                      <img src="img/cart.svg" alt="tarifs" />
+                    </div>
+                  </div>
+                  <div class="price">
+                    <span class="price-text"
+                      ><i class="fa fa-rub" aria-hidden="true"></i> 200 /
+                      месяц</span
+                    >
+                    <span class="sale-text">-15% (из за НГ)</span>
+                  </div>
+                </div>
+                <div>
+                  <button href="#" class="order-text">ЗАКАЗАТЬ</button>
+                </div>
+              </div>
+            </div>
+            <div class="tarif-card">
+              <div class="tarif-headline">
+                <span class="bold-t">Gamma</span>
+              </div>
+              <div class="img-tarif">
+                <div>
+                  <img src="img/gama_plan.svg" alt="serv_tarif" />
+                </div>
+              </div>
+              <div class="params-list">
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">5</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">SSD</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">2</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">ОЗУ</p>
+                  </div>
+                </div>
+                <div class="mini-params">
+                  <div class="mini-params-value">
+                    <p class="params-title">150</p>
+                  </div>
+                  <div class="mini-params-name">
+                    <p class="params-text">сайтов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pack">
+                <ul>
+                  <li>ISP manager</li>
+                  <li>Bill manager</li>
+                  <li>Vecta CP</li>
+                  <li>100 GB SSD</li>
+                  <li>Intel Core i7</li>
+                </ul>
+              </div>
+              <div class="order-button">
+                <div class="price-block">
+                  <div class="price-img">
+                    <div>
+                      <img src="img/cart.svg" alt="tarifs" />
+                    </div>
+                  </div>
+                  <div class="price">
+                    <span class="price-text"
+                      ><i class="fa fa-rub" aria-hidden="true"></i> 200 /
+                      месяц</span
+                    >
+                    <span class="sale-text">-15% (из за НГ)</span>
+                  </div>
+                </div>
+                <div>
+                  <button href="#" class="order-text">ЗАКАЗАТЬ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer">
+        <div class="main-footer">
+          <div class="w-100">
+            <p class="copy">
+              Copyright {data} &copy Enoot. All rights reserved
+            </p>
+            <p class="grey no-mobile">
+              Enoot is registred trademark of NTC Data SIA.
+            </p>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

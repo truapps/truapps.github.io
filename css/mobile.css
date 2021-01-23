@@ -1,0 +1,177 @@
+/* @media screen and (max-width: 1000px) {
+  .slide {
+    display: none;
+  }
+  .main-tarif {
+    flex-wrap: wrap;
+  }
+} */
+@media screen and (max-width: 1180px) {
+  .slide {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main-step {
+    display: none;
+  }
+  .shield {
+    display: none;
+  }
+}
+@media screen and (max-width: 630px) {
+  .features-content {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .start_buttons {
+    justify-content: center;
+  }
+  #main-block {
+    height: auto;
+  }
+  .m-3r {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .search-domain {
+    border: 2px solid #2a2b32;
+    margin: 0 1rem;
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  .copy {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .main-footer {
+    margin: 0;
+  }
+  .title-guarantees {
+    display: none;
+  }
+  .title-guarantees-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none !important;
+  }
+  .right_buttons {
+    display: none;
+  }
+  .headline {
+    display: none;
+  }
+  .nav-bars {
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+  }
+  .main_preferences {
+    display: none;
+  }
+  .read-more {
+    display: none;
+  }
+  .guarantees-list {
+    margin: 0 2rem;
+  }
+  .main-footer {
+    margin: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .shield {
+    display: none;
+  }
+  /* .features-content {
+    flex-wrap: wrap;
+    margin: 0;
+  } */
+  .main-step {
+    display: none;
+  }
+  .main-footer {
+    margin: 0;
+  }
+  .main {
+    margin: 0;
+    padding: 0;
+  }
+  .main_text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .main-tarif {
+    padding: 0;
+  }
+  .start_buttons {
+    justify-content: center;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  #main-block {
+    height: auto;
+  }
+  .title-guarantees-mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .title-guarantees {
+    display: none;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .search-domain {
+    border: 2px solid #2a2b32;
+    margin: 0 1rem;
+    padding: 10px;
+    width: 100%;
+    display: block;
+  }
+  .m-3r {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .guarantees-card {
+    width: 100%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .copy {
+    text-align: center;
+    padding: 1rem 0;
+  }
+}

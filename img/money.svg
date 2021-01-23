@@ -1,0 +1,28 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke: #444f5a;
+      }
+
+      .cls-2 {
+        stroke: #ff2045;
+      }
+    </style>
+  </defs>
+  <title>_</title>
+  <g>
+    <circle class="cls-1" cx="18.5" cy="18.5" r="18"/>
+    <circle class="cls-1" cx="18.5" cy="18.5" r="14.44437"/>
+    <path class="cls-2" d="M24.24589,24.14261a7.34815,7.34815,0,1,1-.12173-11.38471"/>
+    <g>
+      <line class="cls-2" x1="8.39415" y1="16.96228" x2="19.83719" y2="16.96228"/>
+      <line class="cls-2" x1="8.39415" y1="20.03772" x2="19.83719" y2="20.03772"/>
+    </g>
+  </g>
+</svg>

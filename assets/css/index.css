@@ -283,7 +283,7 @@ img{
     left: 50%;
     bottom: 10%;
     -webkit-transform: translateX(-50%);
-    z-index: 9999;
+    z-index: 2;
 }
 #mouse-scroll .mouse {
     height: 45px;

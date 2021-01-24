@@ -1,0 +1,457 @@
+section{
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+#page_header, #merch{
+	height:100vh;
+}
+
+#signa {
+	background-image: linear-gradient(180deg,#ffffff 35%,#ddbbfc 100%)!important;
+	background-size: 100% 89%;
+}
+
+#friend{
+	background-color:#795f44;
+}
+
+#signa .background-svg, #signs .background-svg{
+	    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 35vw;
+    display: block;
+}
+
+#page_header .page_header::before{
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	background: linear-gradient(to left,#6a4519 0%,#683b16 100%);
+	opacity: .6;
+	z-index: -2;
+}
+
+#page_header .page_header{
+	position: relative;
+    z-index: 1;
+    background: url(../images/coffee-bg.png) no-repeat scroll center 30%/cover;
+    
+}
+
+img{
+	border-radius: 15px;
+	max-width:100%;
+}
+
+.header-content{
+	text-align: center;
+	height: 100vh;
+}
+
+.site-title{
+	color: #fff;
+	font-size: 3.5em;
+	
+}
+
+
+.site-main-title{
+	color:#fff;
+	-webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+/* MERCH */
+
+#merch-body{
+	text-align: right;
+	position: relative;
+	width: 100%;
+	right: -20vw;
+		opacity: 0;
+}
+
+#merch-photo{
+	position: relative;
+	width: 100%;
+	
+	opacity: 1;
+}
+
+#merch-photo.show{
+	animation: merch-photo-move .6s ease-out;
+	left:0;
+	opacity: 1;
+}
+
+#merch-body.show{
+	animation: merch-body-move .6s ease-out;
+	right:0;
+	opacity: 1;
+}
+
+/* SIGNA */
+#signa-photo {
+	position: relative;
+	width: 100%;
+	left: -20vw;
+	opacity: 0;
+}
+#signa-photo.scale{
+	animation: scale 2s;
+	opacity: 1;
+	
+}
+#signa-body{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	bottom:-20vh;
+	transition: opacity 1s ease-out;
+	opacity:0;
+}
+#signa-body.show{
+	opacity: 1;
+}
+
+/* SIGNS */
+.signs-waves svg{
+	position: absolute;
+    bottom: 0;
+}
+#signs-body{
+	position: relative;
+	width: 100%;
+	top:-30vh;
+	opacity: 0;
+	transition: opacity 1s ease-out;
+}
+#signs-photo{
+	position: relative;
+	width: 100%;
+	bottom:-25vh;
+	opacity: 0;
+	transition: opacity 1s ease-out;
+	padding: 8px;
+    background-color: white;
+    border-radius: 15px;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+._wpost_post_subscribed{
+	display:none;
+}
+
+.page_post_thumb_wrap{
+	width: 100%;
+    min-height: 175px;
+    background-size: contain;
+}
+
+.page_post_sized_thumbs{
+	width: 100%;
+	min-height:150px;
+}
+
+#signs-body.show, #signs-photo.show{
+	opacity: 1;
+}
+.triangle-signs{
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30vh 100vw;
+    border-color: transparent transparent #8829f9 transparent;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
+}
+
+
+/* FRIEND */
+#friend-block{
+    width: 415px;
+    max-width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+}
+#friend-block.show{
+	animation: scale-friend .9s;
+	
+}
+#friend-block img{
+	text-align:center;
+}
+
+#friend-header{
+	position: relative;
+	width: 100%;
+	top:-25vh;
+	opacity:0;
+	text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    transition: opacity 1s ease-out;
+}
+
+#friend-btn{
+	z-index:10;
+}
+
+#friend-header.show, #friend-btn.show{
+	opacity:1;
+}
+
+#friend-btn{
+	position: relative;
+	width: 100%;
+	bottom:-25vh;
+	padding-top: 1rem;
+    text-align: center;
+    opacity:0;
+    transition: opacity 1s ease-out;
+}
+
+#friend-btn .button{
+	color:#8829f9;
+}
+/*  FRIEND */
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves-block{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+
+#fp-nav ul li a span{
+	transition: all .2s ease-in-out!important;
+}
+
+#fp-nav ul li a span.white{
+	background-color:#fff;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+#mouse-scroll {
+    position: fixed;
+    margin: auto;
+    left: 50%;
+    bottom: 10%;
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+}
+#mouse-scroll .mouse {
+    height: 45px;
+    width: 30px;
+    border-radius: 15px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    border: 2px solid #ffffff;
+    top: 170px;
+}
+#mouse-scroll .mouse-in {
+    height: 5px;
+    width: 2px;
+    display: block;
+    margin: 5px auto;
+    background: #ffffff;
+    position: relative;
+    -webkit-animation: animated-mouse 1.2s ease infinite;
+}
+#mouse-scroll .down-arrow-1, 
+#mouse-scroll .down-arrow-2, 
+#mouse-scroll .down-arrow-3 {
+     -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite:;
+}
+#mouse-scroll .down-arrow-1 {
+    margin-top: 10px;
+}
+#mouse-scroll .down-arrow-2 {
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -webkit-animation-direction: alternate;
+}
+#mouse-scroll .down-arrow-3 {
+    -webkit-animation-delay: .3s;
+    -moz-animation-dekay: .3s;
+    -webkit-animation-direction: alternate;
+}
+#mouse-scroll span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin: 0 0 3px 13px;
+}
+
+
+@-webkit-keyframes animated-mouse {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100% {
+         opacity: 0;
+        -webkit-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-webkit-keyframes mouse-scroll {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
+@keyframes mouse-scroll {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes merch-photo-move {
+    0% {
+        left:-30vw;
+    }
+
+    100% {
+        left:0;
+    }
+}
+
+@keyframes merch-body-move {
+    0% {
+    	opacity: 0;
+        right:-30vw;
+    }
+    100% {
+    	opacity:1;
+        right:0;
+    }
+}
+
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:80px;
+    min-height:80px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+  .merch-body{
+  	margin-top:15px;
+  }
+  .signs-waves svg{
+    height: 28vh;
+  }
+  
+  #signa-body{
+  	padding-top:20px;
+  }
+  #signs-photo{
+  	padding-top: 35px;
+  }
+  #signs-photo .signs_example_image{
+  	display:inherit;
+  }
+  
+  #signs-photo .signs_example_post{
+  	display: none;
+  }
+  #merch-body{
+  	text-align:center;
+  }
+}
+
+
+@keyframes scale {
+ 20% { transform: scale(1.1); }
+ 30% { transform: scale(1); }
+ 39% { transform: scale(1.1); }
+ 49% { transform: scale(1); }
+}
+
+@keyframes scale-friend {
+ 0% { transform: scale(1.5);}
+ 20% { transform: scale(1.5); }
+ 100% { transform: scale(1); }
+}
+

@@ -21,7 +21,7 @@
   transition: width 475ms ease-out, transform 450ms ease,
     border-radius 0.8s 0.1s ease;
   border-bottom-left-radius: 100vw;
-  background-color: rgb(75 49 19 / 58%);
+  background-color: rgb(0 0 0 / 58%);
   z-index: 9;
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);

@@ -196,7 +196,7 @@ a:hover {
 }
 .button {
   display: inline-block;
-  background-color: rgba(218, 150, 85, 0.95);
+  background-color: #101010;
   color: #ffffff !important;
   border: 2px solid transparent;
   padding: 13px 34px;

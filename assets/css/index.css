@@ -12,7 +12,7 @@ section{
 }
 
 #friend{
-	background-color:#795f44;
+	background-color:#101010;
 }
 
 #signa .background-svg, #signs .background-svg{
@@ -31,7 +31,7 @@ section{
     top: 0;
     width: 100%;
     height: 100%;
-	background: linear-gradient(to left,#6a4519 0%,#683b16 100%);
+    background: linear-gradient(to left,#000000 0%,#000000 100%);
 	opacity: .6;
 	z-index: -2;
 }

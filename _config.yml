@@ -1,24 +1,2 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.6px Times; color: #85bfff; -webkit-text-stroke: #85bfff; background-color: #0f1114}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #ffffff; -webkit-text-stroke: #ffffff}
-    span.s1 {font-kerning: none; color: #61e561; -webkit-text-stroke: 0px #61e561}
-    span.s2 {font-kerning: none; color: #d9e2ec; -webkit-text-stroke: 0px #d9e2ec}
-    span.s3 {font-kerning: none}
-    span.s4 {font: 13.6px Times; font-kerning: none; color: #61e561; background-color: #0f1114; -webkit-text-stroke: 0px #61e561}
-    span.s5 {font: 13.6px Times; font-kerning: none; color: #d9e2ec; background-color: #0f1114; -webkit-text-stroke: 0px #d9e2ec}
-    span.s6 {font: 13.6px Times; font-kerning: none; color: #85bfff; background-color: #0f1114; -webkit-text-stroke: 0px #85bfff}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">title:</span><span class="s2"> </span><span class="s3">TruApps Studio - Where Vision Come True</span></p>
-<p class="p2"><span class="s4">description:</span><span class="s5"> </span><span class="s3">TruApps Studio develops Android, Flutter, Kotlin Multiplatform, and backend applications focused on performance, usability, and modern design.</span><span class="s6"><span class="Apple-converted-space"> </span></span></p>
-</body>
-</html>
+title: TruApps Studio
+description: Mobile applications and software projects by TruApps Studio

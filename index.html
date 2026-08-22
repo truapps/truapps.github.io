@@ -78,15 +78,30 @@
             justify-content: space-between;
         }
 
-        .logo {
-            font-size: 20px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
+        .brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
 
-        .logo span {
-            color: #777;
-        }
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #777;
+}
+
+.brand-tagline {
+    margin-top: -2px;
+    color: #888;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
         .nav-links {
             display: flex;
@@ -466,12 +481,15 @@
 
     <div class="container nav">
 
-        <a href="/" class="logo">
-            TruApps<span> Studio</span>
+        <a href="/" class="brand">
+    <div class="logo">
+        TruApps<span> Studio</span>
+    </div>
+
+    <div class="brand-tagline">
+        Where Vision Come True
+    </div>
         </a>
-        <div class="brand-tagline">
-    Where Vision Come True
-        </div>
 
         <div class="nav-links">
 

@@ -97,7 +97,15 @@ width:100%;
 border-radius:22px;
 display:block;
 }
-
+.hero-image {
+    width: 100%;
+    max-height: 520px;
+    aspect-ratio: 9 / 19.5;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+}
+  
 section{padding:70px 0}
 .section-title{
 font-size:34px;
@@ -148,6 +156,15 @@ box-shadow:0 8px 25px rgba(0,0,0,.12);
 transition:.25s;
 }
 .gallery img:hover{transform:scale(1.02)}
+
+.screenshot {
+    width: 100%;
+    max-height: 520px;
+    aspect-ratio: 9 / 19.5;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}  
 
 .about{
 background:white;
@@ -240,7 +257,7 @@ scientific functions, and a beautiful retro-inspired interface.
 </div>
 
 <div class="phone">
-<AsyncImage query="assets/all_in_one.jpg" aspectRatio="9:19.5" width="100%" maxHeight=520/>
+<img src="assets/all_in_one.jpg" alt="all_in_one" class="hero-image"/>
 </div>
 
 </header>
@@ -293,10 +310,10 @@ Explore DiGiCAL in action through these app screenshots.
 </p>
 
 <div class="gallery">
-  <AsyncImage query="assets/screenshot1.jpg" aspectRatio="9:19.5" width="100%" maxHeight=420/>
-  <AsyncImage query="assets/screenshot2.jpg" aspectRatio="9:19.5" width="100%" maxHeight=420/>
-  <AsyncImage query="assets/screenshot3.jpg" aspectRatio="9:19.5" width="100%" maxHeight=420/>
-  <AsyncImage query="assets/screenshot0.jpg" aspectRatio="9:19.5" width="100%" maxHeight=420/>
+  <img src="assets/screenshot1.jpg" alt="screenshot1" class="screnshot"/>
+  <img src="assets/screenshot2.jpg" alt="screenshot2" class="screnshot"/>
+  <img src="assets/screenshot3.jpg" alt="screenshot3" class="screnshot"/>
+  <img src="assets/screenshot0.jpg" alt="screenshot0" class="screnshot"/>
 </div>
 
 </div>

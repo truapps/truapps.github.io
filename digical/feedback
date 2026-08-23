@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DiGiCAL - Tester Feedback</title>
+
+    <meta name="description"
+          content="Send feedback and report issues while testing DiGiCAL.">
+
+    <meta name="theme-color" content="#111111">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background: #f5f5f5;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(800px, calc(100% - 32px));
+            margin: auto;
+        }
+
+        /* Header */
+
+        header {
+            padding: 70px 0 50px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 64px;
+            height: 64px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0 auto 20px;
+
+            border-radius: 16px;
+
+            background: #111;
+            color: white;
+
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        h1 {
+            margin: 0;
+
+            font-size: clamp(34px, 7vw, 52px);
+            line-height: 1.1;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            max-width: 600px;
+
+            margin: 18px auto 0;
+
+            color: #666;
+            font-size: 17px;
+        }
+
+        /* Card */
+
+        .card {
+            background: #fff;
+
+            padding: 32px;
+
+            border: 1px solid #e5e5e5;
+            border-radius: 16px;
+
+            box-shadow:
+                0 5px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            margin-top: 0;
+
+            font-size: 24px;
+            letter-spacing: -0.5px;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        /* Form */
+
+        label {
+            display: block;
+
+            margin-top: 22px;
+            margin-bottom: 7px;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+
+            padding: 13px 14px;
+
+            border: 1px solid #d8d8d8;
+            border-radius: 8px;
+
+            background: #fff;
+
+            color: #222;
+
+            font-family: inherit;
+            font-size: 15px;
+
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #777;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .rating {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .rating label {
+            margin: 0;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating span {
+            display: inline-block;
+
+            padding: 9px 15px;
+
+            border: 1px solid #ddd;
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 14px;
+        }
+
+        .rating input:checked + span {
+            background: #111;
+            color: #fff;
+            border-color: #111;
+        }
+
+        .submit {
+            width: 100%;
+
+            margin-top: 28px;
+            padding: 14px 20px;
+
+            border: 0;
+            border-radius: 8px;
+
+            background: #111;
+            color: #fff;
+
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: 600;
+
+            cursor: pointer;
+        }
+
+        .submit:hover {
+            background: #333;
+        }
+
+        /* Information */
+
+        .info {
+            margin-top: 25px;
+
+            padding: 20px;
+
+            background: #f7f7f7;
+
+            border-radius: 10px;
+
+            color: #666;
+
+            font-size: 14px;
+        }
+
+        .info strong {
+            color: #333;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 40px 0;
+
+            text-align: center;
+
+            color: #888;
+
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 50px 0 35px;
+            }
+
+            .card {
+                padding: 24px 20px;
+            }
+
+            h1 {
+                letter-spacing: -1.5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="logo">
+            D
+        </div>
+
+        <h1>
+            DiGiCAL Tester Feedback
+        </h1>
+
+        <p class="subtitle">
+            Thanks for helping us test DiGiCAL.
+            Your feedback helps us find bugs, improve usability,
+            and make the app better before the public release.
+        </p>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>
+                Share Your Feedback
+            </h2>
+
+            <p>
+                Please tell us about your experience using DiGiCAL.
+                You can report bugs, suggest improvements, or simply
+                tell us what you liked about the app.
+            </p>
+
+
+            <!--
+                IMPORTANT:
+                Replace the email address below with your email.
+
+                This form uses mailto and does not require a backend.
+            -->
+
+            <form
+                action="mailto:your-email@example.com"
+                method="post"
+                enctype="text/plain">
+
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="Optional">
+
+
+                <label for="experience">
+                    Overall Experience
+                </label>
+
+                <div class="rating">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="Rating"
+                            value="1 - Very Poor">
+                        <span>1</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="Rating"
+                            value="2 - Poor">
+                        <span>2</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="Rating"
+                            value="3 - Okay">
+                        <span>3</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="Rating"
+                            value="4 - Good">
+                        <span>4</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="Rating"
+                            value="5 - Excellent">
+                        <span>5</span>
+                    </label>
+
+                </div>
+
+
+                <label for="type">
+                    Feedback Type
+                </label>
+
+                <select
+                    id="type"
+                    name="Feedback Type">
+
+                    <option value="General Feedback">
+                        General Feedback
+                    </option>
+
+                    <option value="Bug Report">
+                        Bug Report
+                    </option>
+
+                    <option value="Feature Request">
+                        Feature Request
+                    </option>
+
+                    <option value="UI / Design">
+                        UI / Design
+                    </option>
+
+                    <option value="Performance">
+                        Performance
+                    </option>
+
+                    <option value="Calculation Issue">
+                        Calculation Issue
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <label for="feedback">
+                    Your Feedback
+                </label>
+
+                <textarea
+                    id="feedback"
+                    name="Feedback"
+                    required
+                    placeholder="Tell us what you experienced..."></textarea>
+
+
+                <label for="device">
+                    Device / Android Version
+                </label>
+
+                <input
+                    type="text"
+                    id="device"
+                    name="Device"
+                    placeholder="Example: Pixel 9a, Android 16">
+
+
+                <label for="steps">
+                    Steps to Reproduce
+                    <span style="font-weight: normal; color: #888;">
+                        (for bug reports)
+                    </span>
+                </label>
+
+                <textarea
+                    id="steps"
+                    name="Steps to Reproduce"
+                    placeholder="Example:
+1. Open DiGiCAL
+2. Enter 100 + 20
+3. Press =
+4. Result is..."></textarea>
+
+
+                <button
+                    type="submit"
+                    class="submit">
+
+                    Send Feedback
+
+                </button>
+
+            </form>
+
+
+            <div class="info">
+
+                <strong>Privacy:</strong>
+                Please don't include passwords, payment information,
+                phone numbers, or other sensitive personal information
+                in your feedback.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 TruApps Studio · DiGiCAL
+        </p>
+
+        <p>
+            <a href="../">
+                DiGiCAL
+            </a>
+            &nbsp; · &nbsp;
+
+            <a href="../privacy-policy.html">
+                Privacy Policy
+            </a>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

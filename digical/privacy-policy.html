@@ -1,167 +1,915 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DiGiCAL - Privacy Policy</title>
 
-    <style>
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Privacy Policy for DiGiCAL by TruApps Studio."
+>
+
+<meta
+    name="theme-color"
+    content="#10285A"
+>
+
+<title>DiGiCAL | Privacy Policy</title>
+
+<style>
+
+    /* =========================================================
+       TRUAPPS NAVY TURQUOISE STUDIO THEME
+    ========================================================= */
+
+    :root {
+
+        /* Primary Navy Palette */
+        --navy: #193778;
+        --navy-dark: #10285A;
+        --navy-deep: #0B1D43;
+        --navy-light: #24478F;
+
+        /* Accent Palette */
+        --turquoise: #3FE0C0;
+        --teal: #0DB69F;
+
+        /* Text */
+        --white: #FFFFFF;
+        --white-soft: rgba(255, 255, 255, 0.88);
+        --white-muted: rgba(255, 255, 255, 0.66);
+
+        /* Background */
+        --background: #10285A;
+        --background-dark: #0B1D43;
+        --background-soft: #142F68;
+
+        /* UI */
+        --border: rgba(255, 255, 255, 0.10);
+        --border-light: rgba(255, 255, 255, 0.14);
+
+        --turquoise-soft: rgba(63, 224, 192, 0.10);
+        --turquoise-border: rgba(63, 224, 192, 0.32);
+
+        /* Shadows */
+        --shadow:
+            0 20px 55px rgba(0, 0, 0, 0.28);
+
+        --shadow-hover:
+            0 25px 65px rgba(0, 0, 0, 0.38);
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================================================
+       PAGE
+    ========================================================= */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+
+        min-height: 100vh;
+
+        font-family:
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            Roboto,
+            Helvetica,
+            Arial,
+            sans-serif;
+
+        background:
+            linear-gradient(
+                180deg,
+                var(--background-dark) 0%,
+                var(--background) 45%,
+                var(--background-soft) 100%
+            );
+
+        color: var(--white);
+
+        line-height: 1.7;
+
+        -webkit-font-smoothing: antialiased;
+
+        text-rendering: optimizeLegibility;
+    }
+
+
+    /* =========================================================
+       DECORATIVE BACKGROUND
+    ========================================================= */
+
+    body::before {
+
+        content: "";
+
+        position: fixed;
+
+        width: 520px;
+        height: 520px;
+
+        top: -280px;
+        right: -190px;
+
+        background: var(--turquoise);
+
+        opacity: 0.055;
+
+        border-radius: 50%;
+
+        filter: blur(25px);
+
+        pointer-events: none;
+
+        z-index: 0;
+    }
+
+
+    body::after {
+
+        content: "";
+
+        position: fixed;
+
+        width: 430px;
+        height: 430px;
+
+        bottom: -250px;
+        left: -190px;
+
+        background: var(--turquoise);
+
+        opacity: 0.035;
+
+        border-radius: 50%;
+
+        filter: blur(25px);
+
+        pointer-events: none;
+
+        z-index: 0;
+    }
+
+
+    /* =========================================================
+       MAIN CONTAINER
+    ========================================================= */
+
+    .container {
+
+        position: relative;
+
+        z-index: 1;
+
+        width:
+            min(
+                800px,
+                calc(100% - 32px)
+            );
+
+        margin: 55px auto;
+
+        padding: 42px;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(36, 71, 143, 0.72),
+                rgba(16, 40, 90, 0.82)
+            );
+
+        border:
+            1px solid var(--border-light);
+
+        border-radius: 22px;
+
+        box-shadow: var(--shadow);
+
+        backdrop-filter: blur(14px);
+
+        -webkit-backdrop-filter: blur(14px);
+    }
+
+
+    /* =========================================================
+       TOP ACCENT LINE
+    ========================================================= */
+
+    .container::before {
+
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+        left: 42px;
+        right: 42px;
+
+        height: 2px;
+
+        background:
+            linear-gradient(
+                90deg,
+                transparent,
+                var(--turquoise),
+                transparent
+            );
+
+        border-radius: 10px;
+
+        opacity: 0.8;
+    }
+
+
+    /* =========================================================
+       BRAND
+    ========================================================= */
+
+    .brand {
+
+        display: inline-flex;
+
+        align-items: center;
+
+        margin-bottom: 24px;
+
+        color: var(--white);
+
+        font-size: 15px;
+
+        font-weight: 700;
+
+        text-decoration: none;
+
+        letter-spacing: 0.1px;
+
+        transition:
+            color 0.2s ease,
+            transform 0.2s ease;
+    }
+
+
+    .brand:hover {
+
+        color: var(--turquoise);
+
+        text-decoration: none;
+
+        transform: translateX(2px);
+    }
+
+
+    /* =========================================================
+       BRAND MARK
+    ========================================================= */
+
+    .brand-mark {
+
+        width: 38px;
+        height: 38px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-right: 11px;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(63, 224, 192, 0.16),
+                rgba(13, 182, 159, 0.08)
+            );
+
+        border:
+            1px solid var(--turquoise-border);
+
+        border-radius: 11px;
+
+        color: var(--turquoise);
+
+        font-size: 14px;
+
+        font-weight: 800;
+
+        box-shadow:
+            0 8px 24px
+            rgba(0, 0, 0, 0.16);
+    }
+
+
+    /* =========================================================
+       HEADINGS
+    ========================================================= */
+
+    h1 {
+
+        margin: 0 0 8px;
+
+        color: var(--white);
+
+        font-size:
+            clamp(
+                32px,
+                6vw,
+                46px
+            );
+
+        line-height: 1.12;
+
+        letter-spacing: -1.8px;
+    }
+
+
+    h2 {
+
+        display: flex;
+
+        align-items: center;
+
+        margin-top: 34px;
+
+        margin-bottom: 10px;
+
+        color: var(--white);
+
+        font-size: 21px;
+
+        line-height: 1.3;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    /* Section indicator */
+
+    h2::before {
+
+        content: "";
+
+        flex: 0 0 auto;
+
+        width: 4px;
+        height: 19px;
+
+        margin-right: 10px;
+
+        background:
+            linear-gradient(
+                180deg,
+                var(--turquoise),
+                var(--teal)
+            );
+
+        border-radius: 10px;
+
+        box-shadow:
+            0 0 12px
+            rgba(63, 224, 192, 0.22);
+    }
+
+
+    /* =========================================================
+       DATE
+    ========================================================= */
+
+    .date {
+
+        margin-bottom: 30px;
+
+        color: var(--turquoise);
+
+        font-size: 13px;
+
+        font-weight: 600;
+
+        letter-spacing: 0.1px;
+    }
+
+
+    /* =========================================================
+       TEXT
+    ========================================================= */
+
+    p {
+
+        margin-top: 12px;
+
+        color: var(--white-muted);
+
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    h2 + p {
+        margin-top: 5px;
+    }
+
+
+    /* =========================================================
+       LINKS
+    ========================================================= */
+
+    a {
+
+        color: var(--turquoise);
+
+        text-decoration: none;
+
+        transition:
+            color 0.2s ease,
+            opacity 0.2s ease;
+    }
+
+
+    a:hover {
+
+        color: #72EBD5;
+
+        text-decoration: underline;
+    }
+
+
+    /* =========================================================
+       EMAIL
+    ========================================================= */
+
+    .email {
+
+        display: inline-block;
+
+        margin-top: 6px;
+
+        padding:
+            8px 13px;
+
+        background:
+            linear-gradient(
+                145deg,
+                rgba(63, 224, 192, 0.12),
+                rgba(13, 182, 159, 0.07)
+            );
+
+        border:
+            1px solid var(--turquoise-border);
+
+        border-radius: 9px;
+
+        color: var(--turquoise);
+
+        font-weight: 600;
+
+        transition:
+            background 0.2s ease,
+            border-color 0.2s ease,
+            transform 0.2s ease;
+    }
+
+
+    .email:hover {
+
+        text-decoration: none;
+
+        background:
+            rgba(63, 224, 192, 0.17);
+
+        border-color:
+            rgba(63, 224, 192, 0.55);
+
+        transform:
+            translateY(-1px);
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+
+        margin-top: 42px;
+
+        padding-top: 24px;
+
+        border-top:
+            1px solid var(--border);
+
+        color: var(--white-muted);
+
+        font-size: 13px;
+    }
+
+
+    footer strong {
+
+        color: var(--turquoise);
+
+        font-weight: 700;
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 600px) {
+
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    var(--background-dark) 0%,
+                    var(--background) 100%
+                );
         }
+
 
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 40px;
-            background: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+            width:
+                calc(100% - 28px);
+
+            margin:
+                20px auto;
+
+            padding:
+                30px 22px;
+
+            border-radius: 18px;
         }
+
+
+        .container::before {
+
+            left: 22px;
+            right: 22px;
+        }
+
 
         h1 {
-            margin-top: 0;
+
+            font-size: 34px;
+
+            letter-spacing: -1.3px;
         }
+
 
         h2 {
-            margin-top: 30px;
+
+            margin-top: 29px;
+
+            font-size: 19px;
         }
 
-        .date {
-            color: #777;
+
+        p {
+
             font-size: 14px;
+
+            line-height: 1.7;
         }
 
-        a {
-            color: #1565c0;
+
+        .brand {
+
+            margin-bottom: 20px;
         }
+
+
+        .brand-mark {
+
+            width: 36px;
+            height: 36px;
+
+            border-radius: 10px;
+        }
+
 
         footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #777;
-            font-size: 14px;
+
+            margin-top: 34px;
+
+            padding-top: 21px;
+        }
+    }
+
+
+    /* =========================================================
+       SMALL MOBILE
+    ========================================================= */
+
+    @media (max-width: 400px) {
+
+        .container {
+
+            width: 100%;
+
+            margin: 0;
+
+            padding:
+                30px 20px;
+
+            border-radius: 0;
+
+            border-left: 0;
+            border-right: 0;
         }
 
-        @media (max-width: 600px) {
-            .container {
-                margin: 0;
-                padding: 25px 20px;
-                border-radius: 0;
-            }
+
+        .container::before {
+
+            left: 20px;
+            right: 20px;
         }
-    </style>
+
+
+        h1 {
+
+            font-size: 31px;
+        }
+
+
+        .brand {
+
+            margin-bottom: 18px;
+        }
+
+
+        p {
+
+            font-size: 14px;
+        }
+    }
+
+
+    /* =========================================================
+       REDUCED MOTION
+    ========================================================= */
+
+    @media (prefers-reduced-motion: reduce) {
+
+        html {
+
+            scroll-behavior: auto;
+        }
+
+
+        *,
+        *::before,
+        *::after {
+
+            transition:
+                none !important;
+        }
+    }
+
+</style>
+
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <h1>Privacy Policy for DiGiCAL</h1>
 
-    <p class="date">
-        Last updated: August 22, 2026
-    </p>
+<!-- =========================================================
+     BRAND
+========================================================= -->
 
-    <p>
-        TruApps Studio developed the DiGiCAL calculator application.
-        This Privacy Policy explains how information is handled when
-        you use DiGiCAL.
-    </p>
+<a
+    href="../"
+    class="brand"
+>
 
-    <h2>1. Information We Collect</h2>
+    <span class="brand-mark">
+        DC
+    </span>
 
-    <p>
-        DiGiCAL does not collect, store, or transmit personal information
-        from users.
-    </p>
+    DiGiCAL
 
-    <p>
-        The application does not require you to create an account or
-        provide personal information such as your name, phone number,
-        address, or email address.
-    </p>
+</a>
 
-    <h2>2. Information Stored on Your Device</h2>
 
-    <p>
-        DiGiCAL may store application preferences, settings, or calculation
-        history locally on your device.
-    </p>
+<!-- =========================================================
+     TITLE
+========================================================= -->
 
-    <p>
-        Information stored locally by the application remains on your
-        device and is not transmitted to TruApps Studio.
-    </p>
+<h1>
+    Privacy Policy for DiGiCAL
+</h1>
 
-    <h2>3. Internet Access</h2>
 
-    <p>
-        The core functionality of DiGiCAL does not require an internet
-        connection.
-    </p>
+<p class="date">
+    Last updated: August 22, 2026
+</p>
 
-    <h2>4. Third-Party Services</h2>
 
-    <p>
-        DiGiCAL does not currently use third-party services that collect
-        personal information.
-    </p>
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
 
-    <p>
-        If third-party services are added in a future version, this
-        Privacy Policy will be updated accordingly.
-    </p>
+<p>
+    TruApps Studio developed the DiGiCAL calculator application.
+    This Privacy Policy explains how information is handled when
+    you use DiGiCAL.
+</p>
 
-    <h2>5. Children's Privacy</h2>
 
-    <p>
-        DiGiCAL does not knowingly collect personal information from
-        children.
-    </p>
+<!-- =========================================================
+     SECTION 1
+========================================================= -->
 
-    <h2>6. Data Security</h2>
+<h2>
+    1. Information We Collect
+</h2>
 
-    <p>
-        Since DiGiCAL does not collect or transmit personal information,
-        TruApps Studio does not maintain users' personal information
-        on its servers.
-    </p>
 
-    <h2>7. Changes to This Privacy Policy</h2>
+<p>
+    DiGiCAL does not collect, store, or transmit personal
+    information from users.
+</p>
 
-    <p>
-        This Privacy Policy may be updated from time to time.
-        Any changes will be published on this page with an updated
-        "Last updated" date.
-    </p>
 
-    <h2>8. Contact Us</h2>
+<p>
+    The application does not require you to create an account or
+    provide personal information such as your name, phone number,
+    address, or email address.
+</p>
 
-    <p>
-        If you have any questions about this Privacy Policy, please
-        contact TruApps Studio.
-    </p>
 
-    <p>
-        Email:
-        <a href="mailto:truapps.studio@gmail.com">
-            truapps.studio@gmail.com
-        </a>
-    </p>
+<!-- =========================================================
+     SECTION 2
+========================================================= -->
 
-    <footer>
-        &copy; 2026 TruApps Studio. All rights reserved.
-    </footer>
+<h2>
+    2. Information Stored on Your Device
+</h2>
+
+
+<p>
+    DiGiCAL may store application preferences, settings, or
+    calculation history locally on your device.
+</p>
+
+
+<p>
+    Information stored locally by the application remains on your
+    device and is not transmitted to TruApps Studio.
+</p>
+
+
+<!-- =========================================================
+     SECTION 3
+========================================================= -->
+
+<h2>
+    3. Internet Access
+</h2>
+
+
+<p>
+    The core functionality of DiGiCAL does not require an
+    internet connection.
+</p>
+
+
+<!-- =========================================================
+     SECTION 4
+========================================================= -->
+
+<h2>
+    4. Third-Party Services
+</h2>
+
+
+<p>
+    DiGiCAL does not currently use third-party services that
+    collect personal information.
+</p>
+
+
+<p>
+    If third-party services are added in a future version,
+    this Privacy Policy will be updated accordingly.
+</p>
+
+
+<!-- =========================================================
+     SECTION 5
+========================================================= -->
+
+<h2>
+    5. Children's Privacy
+</h2>
+
+
+<p>
+    DiGiCAL does not knowingly collect personal information
+    from children.
+</p>
+
+
+<!-- =========================================================
+     SECTION 6
+========================================================= -->
+
+<h2>
+    6. Data Security
+</h2>
+
+
+<p>
+    Since DiGiCAL does not collect or transmit personal
+    information, TruApps Studio does not maintain users'
+    personal information on its servers.
+</p>
+
+
+<!-- =========================================================
+     SECTION 7
+========================================================= -->
+
+<h2>
+    7. Changes to This Privacy Policy
+</h2>
+
+
+<p>
+    This Privacy Policy may be updated from time to time.
+    Any changes will be published on this page with an updated
+    "Last updated" date.
+</p>
+
+
+<!-- =========================================================
+     SECTION 8
+========================================================= -->
+
+<h2>
+    8. Contact Us
+</h2>
+
+
+<p>
+    If you have any questions about this Privacy Policy,
+    please contact TruApps Studio.
+</p>
+
+
+<p>
+    Email:
+    <a
+        href="mailto:truapps.studio@gmail.com"
+        class="email"
+    >
+        truapps.studio@gmail.com
+    </a>
+</p>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    &copy; 2026
+    <strong>TruApps Studio</strong>.
+    All rights reserved.
+
+</footer>
+
 
 </div>
 
 </body>
+
 </html>

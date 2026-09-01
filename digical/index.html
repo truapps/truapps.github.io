@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -17,6 +19,11 @@
     <meta
         name="theme-color"
         content="#193778"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
     >
 
     <title>DiGiCAL | Retro Calculator by TruApps Studio</title>
@@ -167,7 +174,7 @@
             display: flex;
             align-items: center;
 
-            gap: 32px;
+            gap: 28px;
 
             list-style: none;
         }
@@ -245,7 +252,6 @@
                     rgba(63, 224, 192, 0.10),
                     transparent 30%
                 ),
-
                 linear-gradient(
                     180deg,
                     var(--navy-dark) 0%,
@@ -395,6 +401,8 @@
 
             justify-content: center;
 
+            align-items: center;
+
             flex-wrap: wrap;
 
             gap: 15px;
@@ -411,7 +419,6 @@
             border-radius: 10px;
 
             font-size: 14px;
-
             font-weight: 700;
 
             text-decoration: none;
@@ -884,6 +891,138 @@
 
 
         /* =========================================================
+           CLOSED TESTING
+        ========================================================= */
+
+        .testing {
+            background:
+                var(--background);
+        }
+
+
+        .testing-box {
+            max-width: 950px;
+
+            margin: 0 auto;
+
+            padding: 40px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(63, 224, 192, 0.07),
+                    rgba(255, 255, 255, 0.025)
+                );
+
+            border:
+                1px solid var(--border-accent);
+
+            border-radius: 22px;
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .testing-step {
+            display: flex;
+
+            gap: 22px;
+
+            padding: 25px 0;
+
+            border-bottom:
+                1px solid var(--border-light);
+        }
+
+
+        .testing-step:last-of-type {
+            border-bottom: none;
+        }
+
+
+        .step-number {
+            flex-shrink: 0;
+
+            width: 44px;
+            height: 44px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background:
+                var(--turquoise);
+
+            color:
+                var(--navy-deep);
+
+            border-radius: 50%;
+
+            font-size: 17px;
+
+            font-weight: 800;
+        }
+
+
+        .testing-step h3 {
+            margin-bottom: 7px;
+
+            font-size: 19px;
+
+            color:
+                var(--white);
+        }
+
+
+        .testing-step p {
+            max-width: 700px;
+
+            margin-bottom: 18px;
+
+            font-size: 14px;
+
+            color:
+                var(--text-muted);
+        }
+
+
+        .testing-step .btn-primary {
+            display: inline-block;
+        }
+
+
+        .testing-note {
+            margin-top: 25px;
+
+            padding:
+                17px 20px;
+
+            background:
+                rgba(63, 224, 192, 0.07);
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 12px;
+
+            color:
+                var(--text-muted);
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        .testing-note strong {
+            color:
+                var(--turquoise);
+        }
+
+
+        /* =========================================================
            TECHNOLOGY
         ========================================================= */
 
@@ -964,7 +1103,6 @@
                     rgba(63, 224, 192, 0.08),
                     transparent 35%
                 ),
-
                 linear-gradient(
                     145deg,
                     var(--navy-deep),
@@ -1106,10 +1244,12 @@
                     repeat(2, 1fr);
             }
 
+
             .features {
                 grid-template-columns:
                     repeat(2, 1fr);
             }
+
         }
 
 
@@ -1193,6 +1333,31 @@
                 padding:
                     30px;
             }
+
+
+            .testing-box {
+                padding:
+                    25px 20px;
+            }
+
+
+            .testing-step {
+                gap:
+                    15px;
+            }
+
+
+            .step-number {
+                width:
+                    38px;
+
+                height:
+                    38px;
+
+                font-size:
+                    15px;
+            }
+
         }
 
 
@@ -1251,10 +1416,23 @@
             }
 
 
+            .testing-box {
+                padding:
+                    22px 18px;
+            }
+
+
+            .testing-step {
+                align-items:
+                    flex-start;
+            }
+
+
             .cta {
                 padding:
                     48px 20px;
             }
+
         }
 
 
@@ -1276,6 +1454,7 @@
                 transition:
                     none !important;
             }
+
         }
 
     </style>
@@ -1311,6 +1490,12 @@
             <li>
                 <a href="#portfolio">
                     Screenshots
+                </a>
+            </li>
+
+            <li>
+                <a href="#testing">
+                    Beta Testing
                 </a>
             </li>
 
@@ -1370,18 +1555,30 @@
             <div class="buttons">
 
                 <a
-                    href="#portfolio"
+                    href="https://groups.google.com/g/digical_testers"
                     class="btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    View Screenshots
+                    Join As Tester
                 </a>
 
 
                 <a
-                    href="#features"
+                    href="https://play.google.com/apps/testing/com.truapps.digical"
+                    class="btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Get Early Access
+                </a>
+
+
+                <a
+                    href="#portfolio"
                     class="btn-secondary"
                 >
-                    Explore Features
+                    View Screenshots
                 </a>
 
             </div>
@@ -1389,10 +1586,7 @@
         </div>
 
 
-        <!--
-            Recommended image size:
-            1920 × 1080
-        -->
+        <!-- Recommended image size: 1920 × 1080 -->
 
         <div class="hero-image">
 
@@ -1480,8 +1674,6 @@
         <div class="features">
 
 
-            <!-- FEATURE 1 -->
-
             <div class="feature-card">
 
                 <div class="feature-icon">
@@ -1500,8 +1692,6 @@
 
             </div>
 
-
-            <!-- FEATURE 2 -->
 
             <div class="feature-card">
 
@@ -1522,8 +1712,6 @@
             </div>
 
 
-            <!-- FEATURE 3 -->
-
             <div class="feature-card">
 
                 <div class="feature-icon">
@@ -1541,8 +1729,6 @@
 
             </div>
 
-
-            <!-- FEATURE 4 -->
 
             <div class="feature-card">
 
@@ -1562,8 +1748,6 @@
             </div>
 
 
-            <!-- FEATURE 5 -->
-
             <div class="feature-card">
 
                 <div class="feature-icon">
@@ -1582,8 +1766,6 @@
 
             </div>
 
-
-            <!-- FEATURE 6 -->
 
             <div class="feature-card">
 
@@ -1635,8 +1817,6 @@
         <div class="portfolio-grid">
 
 
-            <!-- SCREENSHOT 1 -->
-
             <div class="portfolio-item">
 
                 <img
@@ -1660,8 +1840,6 @@
 
             </div>
 
-
-            <!-- SCREENSHOT 2 -->
 
             <div class="portfolio-item">
 
@@ -1687,8 +1865,6 @@
             </div>
 
 
-            <!-- SCREENSHOT 3 -->
-
             <div class="portfolio-item">
 
                 <img
@@ -1712,8 +1888,6 @@
 
             </div>
 
-
-            <!-- SCREENSHOT 4 -->
 
             <div class="portfolio-item">
 
@@ -1776,6 +1950,180 @@
                 DiGiCAL is designed to be reliable, fast,
                 and enjoyable to use.
             </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CLOSED TESTING
+    ========================================================= -->
+
+    <section
+        class="section testing"
+        id="testing"
+    >
+
+        <div class="section-title">
+
+            <h2>
+                Join the
+                <span>DiGiCAL Beta</span>
+            </h2>
+
+            <p>
+                Get early access to DiGiCAL, try upcoming
+                features, and help us improve the app before
+                the public release.
+            </p>
+
+        </div>
+
+
+        <div class="testing-box">
+
+
+            <!-- STEP 1 -->
+
+            <div class="testing-step">
+
+                <div class="step-number">
+                    1
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Join the Tester Group
+                    </h3>
+
+                    <p>
+                        Join the DiGiCAL tester group using the same Google
+                        account you use on the Google Play Store.
+                    </p>
+
+
+                    <a
+                        href="https://groups.google.com/g/digical_testers"
+                        class="btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Join As Tester
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="testing-step">
+
+                <div class="step-number">
+                    2
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Get Early Access
+                    </h3>
+
+                    <p>
+                        Open the Google Play testing link while signed in
+                        with the same Google account and get early access
+                        to the latest DiGiCAL test version.
+                    </p>
+
+
+                    <a
+                        href="https://play.google.com/apps/testing/com.truapps.digical"
+                        class="btn-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                         Get Early Access
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="testing-step">
+
+                <div class="step-number">
+                    3
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Install DiGiCAL
+                    </h3>
+
+                    <p>
+                        After joining the test, open Google
+                        Play and install the DiGiCAL test version.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="testing-step">
+
+                <div class="step-number">
+                    4
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Test & Share Feedback
+                    </h3>
+
+                    <p>
+                        Try the app, explore its features,
+                        and let us know about bugs, crashes,
+                        performance issues, or suggestions.
+                    </p>
+
+
+                    <a
+                        href="feedback.html"
+                        class="btn-secondary"
+                    >
+                        Send Feedback
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="testing-note">
+
+                <strong>Important:</strong>
+
+                Use the same Google account for the DiGiCAL
+                Tester Group and Google Play. You must be a
+                member of the tester group before accessing
+                the closed testing release.
+
+            </div>
 
         </div>
 
@@ -1856,9 +2204,9 @@
 
 
             <p>
-                Join the testing program, share your experience,
-                report bugs, and suggest new features to help
-                make DiGiCAL better.
+                Join the closed testing program, try DiGiCAL
+                before the public release, report bugs, and
+                share your feedback with us.
             </p>
 
 
@@ -1868,18 +2216,30 @@
             >
 
                 <a
-                    href="feedback.html"
+                    href="https://groups.google.com/g/digical_testers"
                     class="btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                    Send Feedback
+                    Join As Tester
                 </a>
 
 
                 <a
-                    href="privacy-policy.html"
+                    href="https://play.google.com/apps/testing/com.truapps.digical"
+                    class="btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Get Early Access
+                </a>
+
+
+                <a
+                    href="feedback.html"
                     class="btn-secondary"
                 >
-                    Privacy Policy
+                    Send Feedback
                 </a>
 
             </div>
@@ -1896,15 +2256,23 @@
     <footer>
 
         <p>
+
             © 2026
+
             <span>
                 TruApps Studio
             </span>.
+
             All rights reserved.
+
         </p>
 
 
         <div class="footer-links">
+
+            <a href="#testing">
+                Beta Testing
+            </a>
 
             <a href="feedback.html">
                 Feedback

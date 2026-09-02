@@ -209,6 +209,20 @@ nav {
     line-height: 1.8;
 }
 
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
 
 /* =========================================================
    HERO BUTTONS

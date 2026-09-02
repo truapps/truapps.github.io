@@ -158,8 +158,8 @@
 
         width:
             min(
-                800px,
-                calc(100% - 32px)
+                1600px,
+                calc(80% - 40px)
             );
 
         margin: 55px auto;
